@@ -1,0 +1,143 @@
+$white-layout:horizontal;
+$green-layout:horizontal;
+$yellow-layout:horizontal;
+@import "yellow/*.png";
+@import "white/*.png";
+@import "green/*.png";
+@include all-white-sprites;
+@include all-green-sprites;
+@include all-yellow-sprites;
+
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+
+
+.background{
+	width:340px;
+	height:440px;
+	background: url("../img/icon-13.png") no-repeat center;
+	
+}
+
+.icon-animation{
+	width:340px;
+	height:440px;
+	background: url("../img/white-s7790dd988e.png") left center;
+	animation: play 2s steps(16) infinite;
+}
+
+.icon-animation2{
+	width:340px;
+	height:440px;
+	background: url("../img/green-s50548ffe40.png") left center;
+	animation: play2 2s steps(15) infinite;
+}
+
+.icon-animation3{
+	width:340px;
+	height:440px;
+	background: url("../img/yellow-s0f053cdea3.png") left center;
+	animation: play3 2s steps(10) infinite;
+}
+
+@keyframes play{
+	100% {
+		background-position: -5440px; //width of image times number of frames
+	}
+} 
+
+@keyframes play2{
+	100%{
+		background-position: -5100px;
+	}
+}
+
+@keyframes play3{
+	100%{
+		background-position: -3400px;
+	}
+}
+/*
+.content{
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	max-width:50%;
+}
+*/
+.flex-container{
+	
+	display:flex;
+	justify-content: center;
+	align-items:center;
+	//max-width:50%;
+}
+
+.buttons{
+	margin:.5em;
+	font-family: 'Raleway', sans-serif;
+}
+
+#whitebutton{
+	background-color: #C8C8C8;
+    color: black;
+    border: 2px solid white;
+    margin: .5em;
+    padding: 12px 28px;
+}
+
+#whitebutton {
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+#whitebutton:hover {
+    background-color: white; /* Green */
+}
+
+#greenbutton{
+	background-color: #C8C8C8;
+    color: black;
+    border: 2px solid green;
+    margin: .5em;
+    padding: 12px 28px;
+}
+
+#greenbutton {
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+#greenbutton:hover {
+    background-color: green; /* Green */
+
+}
+
+#yellowbutton{
+	background-color: #C8C8C8;
+    color: black;
+    border: 2px solid yellow;
+    margin: .5em;
+    padding: 12px 28px;
+}
+
+#yellowbutton {
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+#yellowbutton:hover {
+    background-color: yellow; /* Green */
+}
+
+h1{
+	font-family: 'Raleway', sans-serif;
+	font-size:2em;
+	border-bottom: 2px solid black;
+
+}
+
+
+body{
+	background-color:#C8C8C8;
+}
